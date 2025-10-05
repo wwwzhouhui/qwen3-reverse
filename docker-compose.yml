@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  # Qwen FastAPI 逆向代理服务
+  qwen-fastapi:
+    build: .
+    container_name: qwen-fastapi-proxy
+    image: qwen-fastapi:latest
+    ports:
+      - "${PORT:-8000}:8000"    # FastAPI 服务端口
+    environment:
+      - PORT=8000
+      - HOST=0.0.0.0
+      - DEBUG_STATUS=${DEBUG_STATUS:-false}
+      # Qwen认证信息（从.env文件读取）
+      - QWEN_COOKIES=${QWEN_COOKIES:-}
+      - QWEN_AUTH_TOKEN=${QWEN_AUTH_TOKEN:-}
+      # API鉴权Token列表（可选）
+      - VALID_TOKENS=${VALID_TOKENS:-}
+    volumes:
+      # 持久化日志
+      - ./logs:/app/logs
+      # 持久化数据库（会话历史）
+      - ./db:/app/db
+      # 环境变量文件挂载（推荐方式）
+      - ./.env:/app/.env:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    networks:
+      - qwen-network
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+networks:
+  qwen-network:
+    driver: bridge
+
+volumes:
+  logs:
+    driver: local
+  db:
+    driver: local

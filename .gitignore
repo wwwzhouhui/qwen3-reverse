@@ -1,0 +1,101 @@
+# ¯ƒØÏ
+.env
+.env.local
+.env.*.local
+
+# Pythonøs
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+.eggs/
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDEøs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# KÕŒ†Ö‡
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# å×Œpn“
+logs/
+*.log
+db/
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# 4ö‡ö
+*.tmp
+*.bak
+*.cache
+.cache/
+*.swp
+*.swo
+
+# Dockerøs
+.dockerignore
+
+# ýŒKÕ‡ö
+bak/
+test/
+testdata/
+*.txt
+curlvode.txt
+filecurl.txt
+
+# Flaskøs
+flask/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# Í\ûß
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# vÖ
+main.py
+*.pid
+*.seed
+*.pid.lock
+
+# „ú§i
+dist/
+build/
+*.egg-info/
+
+# ÁfŒÆ¥
+*.pem
+*.key
+*.crt
+secrets/
+
+# Nginxå×
+nginx_logs/
