@@ -1,0 +1,30 @@
+# FastAPI and ASGI server
+fastapi>=0.116.1
+uvicorn[standard]>=0.35.0
+
+# HTTP requests
+requests>=2.32.4
+
+# Environment variables
+python-dotenv>=1.1.1
+
+# Data validation
+pydantic>=2.8.2
+
+# File upload support
+python-multipart>=0.0.6
+# Database
+SQLite4  # Built-in Python module, no need to install
+
+# Standard library modules (no installation needed):
+# uuid
+# time
+# json
+# os  
+# warnings
+# re
+# html
+# base64
+# hmac
+# hmac
+# hashlib

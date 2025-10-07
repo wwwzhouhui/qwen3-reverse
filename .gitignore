@@ -1,9 +1,9 @@
-# ¯ƒØÏ
+# ï¿½ï¿½ï¿½ï¿½
 .env
 .env.local
 .env.*.local
 
-# Pythonøs
+# Pythonï¿½s
 __pycache__/
 *.py[cod]
 *$py.class
@@ -20,7 +20,7 @@ venv.bak/
 pip-log.txt
 pip-delete-this-directory.txt
 
-# IDEøs
+# IDEï¿½s
 .vscode/
 .idea/
 *.swp
@@ -30,7 +30,7 @@ pip-delete-this-directory.txt
 *.sublime-project
 *.sublime-workspace
 
-# KÕŒ†Ö‡
+# KÕŒï¿½Ö‡
 .pytest_cache/
 .coverage
 htmlcov/
@@ -40,7 +40,7 @@ coverage.xml
 *.cover
 .hypothesis/
 
-# å×Œpn“
+# ï¿½×Œpnï¿½
 logs/
 *.log
 db/
@@ -49,7 +49,7 @@ db/
 *.sqlite3
 *.db-journal
 
-# 4ö‡ö
+# 4ï¿½ï¿½ï¿½
 *.tmp
 *.bak
 *.cache
@@ -57,45 +57,46 @@ db/
 *.swp
 *.swo
 
-# Dockerøs
+# Dockerï¿½s
 .dockerignore
 
-# ýŒKÕ‡ö
+# ï¿½ï¿½KÕ‡ï¿½
 bak/
 test/
 testdata/
 *.txt
+!requirements.txt
 curlvode.txt
 filecurl.txt
 
-# Flaskøs
+# Flaskï¿½s
 flask/
 
 # Jupyter Notebook
 .ipynb_checkpoints/
 *.ipynb
 
-# Í\ûß
+# ï¿½\ï¿½ï¿½
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# vÖ
+# vï¿½
 main.py
 *.pid
 *.seed
 *.pid.lock
 
-# „ú§i
+# ï¿½ï¿½ï¿½i
 dist/
 build/
 *.egg-info/
 
-# ÁfŒÆ¥
+# ï¿½fï¿½Æ¥
 *.pem
 *.key
 *.crt
 secrets/
 
-# Nginxå×
+# Nginxï¿½ï¿½
 nginx_logs/
