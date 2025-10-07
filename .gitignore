@@ -100,3 +100,4 @@ secrets/
 
 # Nginx��
 nginx_logs/
+.claude/settings.local.json
